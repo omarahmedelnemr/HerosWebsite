@@ -81,7 +81,7 @@ h4,
 .display-4,
 .display-5,
 .display-6 {
-    font-family: 'Lobster Two', cursive;
+    font-family: "Marhey", cursive;
     font-weight: 700;
 }
 
@@ -93,7 +93,7 @@ h6,
 }
 
 .font-secondary {
-    font-family: 'Lobster Two', cursive;
+    font-family: "Marhey", cursive;
 }
 
 
@@ -124,20 +124,22 @@ h6,
     top: -100px;
     transition: .5s;
 }
-
+.navbar .dropdown-toggle{
+    text-align: right;
+}
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     vertical-align: middle;
-    margin-left: 5px;
+    margin-right: 5px;
     transition: .5s;
 }
 
-.navbar .dropdown-toggle[aria-expanded=true]::after {
+/* .navbar .dropdown-toggle[aria-expanded=true]::after {
     transform: rotate(-180deg);
-}
+} */
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
@@ -440,6 +442,9 @@ h6,
 
 
 /*** Footer ***/
+.footer{
+    direction: rtl;
+}
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 45px;
@@ -462,16 +467,16 @@ h6,
     display: block;
     margin-bottom: 5px;
     padding: 0;
-    text-align: left;
+    text-align: right;
     font-size: 16px;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
 }
 
-.footer .btn.btn-link::before {
+.footer .btn.btn-link::after {
     position: relative;
-    content: "\f105";
+    content: "\f104";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
