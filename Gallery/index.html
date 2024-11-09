@@ -4,67 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Image Gallery</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/edits.css" rel="stylesheet">
-    <style>
-        /* Custom styling */
-        .gallery-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .gallery-nav {
-            flex-basis: 25%;
-        }
-        .gallery-images {
-            flex-basis: 75%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-        .gallery-images img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        /* Control image sizes */
-        .gallery-images .large {
-            grid-column: span 2;
-            grid-row: span 2;
-        }
-        .gallery-images .medium {
-            grid-column: span 2;
-        }
-        @media (max-width: 768px) {
-            .gallery-nav {
-                flex-basis: 100%;
-                margin-bottom: 1rem;
-            }
-            .gallery-images {
-                flex-basis: 100%;
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/edits.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
 </head>
 <body id="PhotoGallry">
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
         <a href="index.html" class="navbar-brand">
             <!-- <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Kider</h1> -->
-            <img class="Logo me-3 text-primary" src="img/Logo.png"/>
+            <img class="Logo me-3 text-primary" src="../img/Logo.png"/>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav"> <!--  mx-auto -->
-                <a href="index.html" class="nav-item nav-link">الرئيسية</a>
-                <a href="about.html" class="nav-item nav-link">من نحن؟</a>
-                <a href="PhotoGallery.html" class="nav-item nav-link active">رحلاتنا </a>
-                <a href="" class="nav-item nav-link">خدماتنا</a>
+                <a href="../index.html" class="nav-item nav-link">الرئيسية</a>
+                <a href="/about" class="nav-item nav-link">من نحن؟</a>
+                <a href="" class="nav-item nav-link active">رحلاتنا </a>
+                <a href="../" class="nav-item nav-link">خدماتنا</a>
                 <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
@@ -84,12 +46,12 @@
 
     <!-- Page Header End -->
     <div class="py-5 page-header position-relative mb-5">
-        <div class="container py-5">
-            <h1 class="display-2 text-white animated slideInDown mb-4">رحلاتنا</h1>
+        <div class="tripsContainer py-5">
+            <h1 class="display-2 text-white animated slideInDown mb-4">مخيمات تنموية و ترفيهيه</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
-                    <!-- <li class="breadcrumb-item"><a href="#">الرئيسية</a></li> -->
-                    <!-- <li class="breadcrumb-item text-white active" aria-current="page">من نحن؟</li> -->
+                    <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">مخيمات تنموية و ترفيهيه</li>
                 </ol>
             </nav>
         </div>
@@ -98,55 +60,46 @@
 
 <div class="tripsContainer">
     <div class="row">
-        <!-- Left Navigation for categories -->
-        <div class="col-md-3 gallery-nav wow fadeInLeft">
-            <ul class="list-group">
-                <li class="list-group-item active" data-filter="all">All</li>
-                <li class="list-group-item" data-filter="trip1">Trip 1</li>
-                <li class="list-group-item" data-filter="trip2">Trip 2</li>
-            </ul>
-        </div>
+        
 
         <!-- Right side Image Gallery -->
         <div class="col-md-9 gallery-images wow fadeInRight">
-            <!-- Images for Trip 1 -->
-            <img src="img/Trips 1.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <img src="img/Trips 2.png" alt="Trip 1" data-category="trip1">
-            <!-- Images for Trip 2 -->
-            <img src="img/Trips 3.png" alt="Trip 2" data-category="trip2" >
-            <img src="img/Trips 4.png" alt="Trip 2" data-category="trip2">
-            <!-- Images for All -->
-            <!-- <img src="https://via.placeholder.com/150x150" alt="All" data-category="all"> -->
-            <!-- <img src="https://via.placeholder.com/300x150" alt="All" data-category="all"> -->
+            <!-- "مخيم تركيا" -->
+            <img src="../img/Trip 1.png" alt="مخيم تركيا" data-category="trip1">
+            <img src="../img/Trip 2.png" alt="مخيم تركيا" data-category="trip1">
+            <img src="../img/Trip 3.png" alt="مخيم تركيا" data-category="trip1" >
+            <img src="../img/Trip 4.png" alt="مخيم تركيا" data-category="trip1">
+
+            <!-- مخيم مكة و المدينة -->
+            <img src="../img/Trip 5.png" alt="مخيم مكة و المدينة" data-category="trip2">
+            <img src="../img/Trip 6.png" alt="مخيم مكة و المدينة" data-category="trip2">
+            <img src="../img/Trip 7.png" alt="مخيم مكة و المدينة" data-category="trip2">
+            <img src="../img/Trip 8.png" alt="مخيم مكة و المدينة" data-category="trip2">
+
+
+            <!-- مخيم الرياض -->
+            <img src="../img/Trip 9.png" alt="مخيم الرياض" data-category="trip3">
+            <img src="../img/Trip 10.png" alt="مخيم الرياض" data-category="trip3">
+
+            <!-- مخيم وادي الريان -->
+            <img src="../img/Trip 11.png" alt="مخيم وادي الريان" data-category="trip4">
+            <img src="../img/Trip 12.png" alt="مخيم وادي الريان" data-category="trip4">
+
+            <!-- مخيم جنوب سيناء -->
+            <img src="../img/Trip 13.png" alt="مخيم جنوب سيناء" data-category="trip5">
+            <img src="../img/Trip 14.png" alt="مخيم جنوب سيناء" data-category="trip5">
+        </div>
+
+        <!-- Left Navigation for categories -->
+        <div class="col-md-3 gallery-nav wow fadeInLeft">
+            <ul class="list-group">
+                <li class="list-group-item active" data-filter="all">الكل</li>
+                <li class="list-group-item" data-filter="trip1">مخيم تركيا</li>
+                <li class="list-group-item" data-filter="trip2">مخيم مكة و المدينة</li>
+                <li class="list-group-item" data-filter="trip3">مخيم الرياض</li>
+                <li class="list-group-item" data-filter="trip4">مخيم وادي الريان</li>
+                <li class="list-group-item" data-filter="trip5">مخيم جنوب سيناء</li>
+            </ul>
         </div>
     </div>
 </div>

@@ -3,21 +3,14 @@
 }
 
 
-#PhotoGallry{
-    background-color:#f8ffff;
 
+.breadcrumb{
+    background-color: transparent;
 }
 .tripsContainer{
     padding: 20px 100px;
 }
-#PhotoGallry .gallery-images{
-    max-height: 100vh;
-    overflow: auto;
-}
-#PhotoGallry img{
-    background-color:#f8ffff;
-    transform: rotate(180deg);
-}
+
 
 #sponser .team-item img{
     width: auto !important;
