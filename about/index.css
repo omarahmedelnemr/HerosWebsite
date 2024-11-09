@@ -1,0 +1,10 @@
+#aboutPage  .page-header{
+    /* direction: rtl; */
+    text-align: right;
+}
+#aboutSection  {
+    direction: rtl;
+}
+#aboutPage .footer {
+    direction: rtl;
+}
