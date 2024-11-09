@@ -8,3 +8,24 @@
 .breadcrumb{
     direction: rtl;
 }
+
+
+#ServicePage .rounded{
+    border-radius: 20px !important;
+}
+#ServicePage .courseDetails{
+    text-align: right;
+    direction: rtl;
+}
+#ServicePage .courseDetails h6{
+    text-wrap: wrap;
+}
+#ServicePage .courseDetails h6::before{
+    border: none;
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-right: 5px;
+    transition: .5s;
+}
