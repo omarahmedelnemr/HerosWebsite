@@ -74,10 +74,10 @@
 
 <div class="tripsContainer">
     <div class="row">
-        <!-- Left Navigation for categories -->
+        <!-- Top Navigation for categories For Small Screens-->
         <div class="col-md-3 gallery-nav wow fadeInLeft TopNavSmall">
             <ul class="list-group">
-                <li class="list-group-item active" data-filter="all">الكل</li>
+                <li class="list-group-item active smallActive" data-filter="all">الكل</li>
                 <li class="list-group-item" data-filter="trip1">مخيم تركيا</li>
                 <li class="list-group-item" data-filter="trip2">مخيم مكة و المدينة</li>
                 <li class="list-group-item" data-filter="trip3">مخيم الرياض</li>
@@ -300,8 +300,15 @@
             }
         });
 
-        // Trigger the "All" category to display all images on page load
-        $('.list-group-item[data-filter="all"]').trigger('click');
+
+        // Check if screen width is smaller than 768px
+        if ($(window).width() < 768) {
+            // Find the first element with the class 'smallActive' and trigger a click
+            $('.smallActive').trigger('click');
+        }else{
+            // Trigger the "All" category to display all images on page load
+            $('.list-group-item[data-filter="all"]').trigger('click');
+        }
     });
 </script>
 
