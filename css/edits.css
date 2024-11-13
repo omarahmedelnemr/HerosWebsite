@@ -115,6 +115,9 @@ body{
 }
 
 .wave_bottom::after{
+    position: absolute;
+    content: "";
+    width: 100%;
     background-color: red;
     height: 19px;
     top: auto;
@@ -146,3 +149,69 @@ body{
     background: url(../img/bg-header-bottom.svg) center center repeat-x;
 }
 
+
+.courseContentOpened{
+    direction: rtl;
+    overflow: hidden;
+    transition: .5s;
+}
+.courseContent{
+    direction: rtl;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.classes-item:hover .courseContentExtraMini{
+    height:50px;
+}
+.classes-item:hover .courseContentMini{
+    height:150px;
+}
+
+.classes-item:hover .courseContentMedium{
+    height:200px;
+}
+
+.classes-item:hover .courseContentLarge{
+    height:300px;
+}
+.classes-item:hover  .courseContentExtraLarge{
+    height:550px;
+}
+
+.courseContent ul, .courseContentOpened ul{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.courseContent li, .courseContentOpened li{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.3rem;
+    /* margin: 5px 0px; */
+}
+.courseContent i, .courseContentOpened i{
+    margin: 10px;
+    color: #ffde00;
+}
+/* #e60480 */
+.classes-item .listArrow{
+    transition: 0.5s;
+    text-align: center;
+}
+.classes-item:hover .listArrow{
+    transform: rotate(180deg);
+}
+
+.center{
+    justify-content: center;
+}
+.about-img{
+    z-index: 1010;
+}
