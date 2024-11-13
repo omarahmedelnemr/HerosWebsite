@@ -109,7 +109,7 @@ body{
     height: 10px;
     top: 0;
     left: 0;
-    background: url(../img/bg-header-top.svg) center center repeat-x;
+    background: url(../img/bg-header-top.png) center center repeat-x;
     z-index: 1;
 
 }
@@ -121,5 +121,28 @@ body{
     bottom: 0;
     z-index: 1;
 
+    background: url(../img/bg-header-bottom.png) center center repeat-x;
+}
+
+.wave_top_svg::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background: url(../img/bg-header-top.svg) center center repeat-x;
+    z-index: 1;
+
+}
+
+.wave_bottom_svg::after{
+    background-color: red;
+    height: 19px;
+    top: auto;
+    bottom: 0;
+    z-index: 1;
+
     background: url(../img/bg-header-bottom.svg) center center repeat-x;
 }
+
