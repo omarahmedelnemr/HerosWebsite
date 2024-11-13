@@ -8,3 +8,30 @@
 .breadcrumb{
     direction: rtl;
 }
+.facility-item{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.3rem;
+
+}
+.facility-item i{
+    margin: 0px 10px;
+    color: #ffde00;
+}
+.facility-item p{
+    margin: 0px;
+   text-align: end;
+
+}
+.facility-item:hover p{
+   color: black;
+}
+.facility-item:hover i{
+    color: #ffde00;
+ }
+
+ #TimeLineSectionContainer{
+    padding: 20px;
+ }

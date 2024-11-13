@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Heroes</title>
+    <title>HeroesTECH</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
     
     <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -31,7 +32,12 @@
     <!-- Template Stylesheet -->
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/edits.css" rel="stylesheet">
+    <link href="./timeline.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
+
+
+
+      <!-- Fonts -->
 </head>
 
 <body id="ServicePage">
@@ -49,7 +55,7 @@
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
             <a href="/" class="navbar-brand">
                 <!-- <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Kider</h1> -->
-                <img class="Logo me-3 text-primary" src="../../img/Logo.png"/>
+                <img class="Logo me-3 text-primary" src="../../img/HeroesLogo.png"/>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -77,27 +83,139 @@
         <!-- Navbar End -->
 
 
-        <!-- Page Header End -->
-        <div class="py-5 page-header position-relative mb-5">
-            <div class="container py-5">
-                <h1 class="display-2 text-white animated slideInDown mb-4">HeroesTECH</h1>
-                <nav aria-label="breadcrumb animated slideInDown">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
-                        <li class="breadcrumb-item"><a href="#">الخدمات</a></li>
-                        <li class="breadcrumb-item breadcrumb-last-item text-white active" aria-current="page">HeroesTECH</li>
-                    </ol>
-                </nav>
+        <!-- Header Slider Start -->
+        <div class="CarouselSection container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="../../img/TechSlider 1.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4"> HeroesTECH</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">أﻛﺎدﻳﻤﻴﺔ ﻣﺘﺨﺼﺼﺔ ﻓﻲ ﻣﺠﺎﻻت اﻟﺘﻜﻨﻮﻟﻮﺟﻴﺎاﻟﺤﺪﻳﺜﺔ ﻟﻸﻃﻔﺎل واﻟﺸﺒﺎبﻣﻦ ﺳﻦ ٨ إﻟﻰ ١٦ ﻋﺎم ﺗﻘﺪمﺗﺠﺮﺑﺔ ﺗﻌﻠﻴﻤﻴﺔ ﺑﺄﺳﻠﻮب ﻣﻤﺘﻊ وﻣﺒﺘﻜﺮ، ﻟﺒﻨﺎء ﻣﻬﺎراﺗﻬﻢ اﻟﺘﻘﻨﻴﺔ وإﻋﺪادﻫﻢ ﻟﻤﺴﺘﻘﺒﻞ رﻗﻤﻲ ﻣﺘﻄﻮر</p>
+                                    <!-- <a href="#about" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">من نحن؟</a> -->
+                                    <a href="#services" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 animated slideInRight">خدماتنا</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="../../img/TechSlider 2.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">رؤيتنا</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2"> ﺗﻤﻜﻴﻦ اﻷﺟﻴﺎل اﻟﻨﺎﺷﺌﺔ ﻣﻦإﺗﻘﺎن ﻣﻬﺎرات اﻟﺘﻜﻨﻮﻟﻮﺟﻴﺎ، ﻟﻴﺼﺒﺤﻮاﻣﺒﺘﻜﺮﻳﻦ ﻗﺎدرﻳﻦ ﻋﻠﻰ ﺑﻨﺎء ﻣﺴﺘﻘﺒﻞ رﻗﻤﻲ ﻣﺘﻤﻴﺰ</p>
+                                    <!-- <a href="#about" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">من نحن؟</a> -->
+                                    <a href="#services" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 animated slideInRight">خدماتنا</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="../../img/TechSlider 2.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">رسالتنا</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2"> ﻧﻬﺪف إﻟﻰ ﺗﻘﺪﻳﻢ ﺗﻌﻠﻴﻢ ﺗﻜﻨﻮﻟﻮﺟﻲ ﻣﺘﻘﺪم ﻟﻸﻃﻔﺎل واﻟﺸﺒﺎب، ﻣﻦﺧﻼل ﺑﺮاﻣﺞ ﺗﻌﻠﻴﻤﻴﺔ ﺗﻔﺎﻋﻠﻴﺔ ﺗﺤﻔﺰ اﻹﺑﺪاع واﻻﺑﺘﻜﺎر</p>
+                                    <!-- <a href="#about" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft">من نحن؟</a> -->
+                                    <a href="#services" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 animated slideInRight">خدماتنا</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Page Header End -->
+        <!-- Header Slider End -->
 
+        <!-- Why HeroesTech Start -->
+        <div class="wave_top">
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                        <h1 class="mb-3 arabicText">ليه HeroesTECH؟</h1>
+                    </div>
+                    <div class="row g-5 center">
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="facility-item  ">
+                                <i class="fas fa-check"></i>
+                                <p>ﻣﻨﺎﻫﺞ ﻣﺘﺪرﺟﺔ ﺗﻬﺪف إﻟﻰ ﺑﻨﺎء اﻟﻤﻬﺎرات اﻟﺘﻘﻨﻴﺔ ﺑﺘﺮﺗﻴﺐ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="facility-item text-center">
+                                <i class="fas fa-check"></i>
+                                <p>ﻣﺤﺎﺿﺮات ﺗﻔﺎﻋﻠﻴﺔ أﺳﺒﻮﻋﻴﺔ ﻣﻊ ﺗﻄﺒﻴﻖ ﻋﻤﻠﻲ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="facility-item text-center">
+                                <i class="fas fa-check"></i>
+                                <p>ﻣﺠﻤﻮﻋﺎت ﺻﻐﻴﺮة ﻟﻀﻤﺎن اﻻﻫﺘﻤﺎم اﻟﻔﺮدي</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="facility-item text-center">
+                                <i class="fas fa-check"></i>
+                                <p>ﻣﺘﺎﺑﻌﺔ ﻣﺴﺘﻤﺮة ﻋﺒﺮ ﻣﺠﻤﻮﻋﺎت واﺗﺴﺎب ﻟﺪﻋﻢ داﺋﻢ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="facility-item text-center">
+                                <i class="fas fa-check"></i>
+                                <p>نظام تقييم ﺷﺎﻣﻞ ﻣﻊ ﺗﻘﺎرﻳﺮ دورﻳﺔ ﻷوﻟﻴﺎء اﻷﻣﻮر</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="facility-item text-center">
+                                <i class="fas fa-check"></i>
+                                <p>ﻣﺤﺎﺿﺮون ﻣﺘﺨﺼﺼﻮن وﺧﺒﺮاء ﻓﻲ ﻣﺠﺎﻻﺗﻬﻢ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="facility-item text-center">
+                                <i class="fas fa-check"></i>
+                                <p>ﺑﺮاﻣﺞ ﺗﻌﻠﻴﻤﻴﺔ ﺗﻨﺎﺳﺐ أﺳﺎﻟﻴﺐ اﻟﺘﻌﻠﻢ اﻟﻤﺨﺘﻠﻔﺔ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="facility-item text-center">
+                                <i class="fas fa-check"></i>
+                                <p>ﻣﺤﺎﺿﺮات ﻣﺴﺠﻠﺔ ﻟﻠﻤﺮاﺟﻌﺔ ﻓﻲ أي وﻗﺖ</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="facility-item text-center">
+                                <i class="fas fa-check"></i>
+                                <p>ﺗﻨﻔﻴﺬ ﻣﺸﺎرﻳﻊ ﻋﻤﻠﻴﺔ وواﺟﺒﺎت ﻟﺘﻌﺰﻳﺰ اﻟﻤﻬﺎرات</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-8 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="facility-item text-center">
+                                <i class="fas fa-check"></i>
+                                <p>ﺷﻬﺎدة ﺗﻘﺪﻳﺮ ﻋﻨﺪ إﺗﻤﺎم اﻟﺒﺮﻧﺎﻣﺞ ﺑﻨﺠﺎح</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Why HeroesTech End -->
 
         <!-- Classes Start -->
-        <div class=" py-5 wave_top">
+        <div class="bg-ment py-5 wave_top">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;" id="services">
-                    <h1 class="mb-3"> HeroesTECH</h1>
+                    <h1 class="mb-3"> خدماتنا</h1>
                     <p> رحلة تعليمية ممتعة في عالم التقنية لتنمية عقول الأبطال</p>
                 </div>
                 <div class="row g-4 center">
@@ -109,16 +227,6 @@
                             </div>
                             <div class="bg-light rounded p-4 pt-5 mt-n5">
                                 <a class="d-block text-center h3 mt-3 mb-4" href="">اﻟﺒﺮﻣﺠﺔ ﺑﺘﺨﺼﺼﺎﺗﻬﺎ اﻟﻤﺨﺘﻠﻔﺔ</a>
-                                <!-- <div class="courseContentOpened">
-                                    <ul>
-                                        <li><i class="fas fa-dot-circle"></i> التربية الجنسية</li>
-                                        <li><i class="fas fa-dot-circle"></i> مشروع ضياء</li>
-                                        <li><i class="fas fa-dot-circle"></i> مشروع وعي (القلب)</li>
-                                        <li><i class="fas fa-dot-circle"></i> مشروع وعي (العقل)</li>
-                                        <li><i class="fas fa-dot-circle"></i> مشروع وعي (الجسد)</li>
-                                    </ul>
-                                </div> -->
-                                
                             </div>
                         </div>
                     </div>
@@ -160,10 +268,232 @@
         </div>
         <!-- Classes End -->
 
+    
+        <!-- Timeline Start -->
+        <div id="TimeLineSectionContainer" class="bg-ment">
+            <!-- Navigation Bar -->
+            <div class="timeline-nav">
+                <button onclick="showTimeline('timeline1')" class="active">البرمجة</button>
+                <button onclick="showTimeline('timeline2')">جرافيك ديزاين</button>
+                <button onclick="showTimeline('timeline3')">مونتاج</button>
+                <button onclick="showTimeline('timeline4')">الموشن جرافيك</button>
+            </div>
 
+            <!-- Timeline Sections -->
+            <section id="timeline1" class="timeline-section active">
+                <div id="conference-timeline">
+                    <div class="timeline-start">Start</div>
+                    <div class="conference-center-line"></div>
+                    <div class="conference-timeline-content">
+                        <!-- Timeline 1 Content -->
+                        <div class="timeline-article">
+                            <div class="content-left-container">
+                                <div class="content-left">
+                                    <div class="ArtHeader">
+                                        <h3>المستوي الأول</h3>
+                                        <span class="arabicText">7 شهور </span>
+
+                                    </div>
+                                    <h4> المحتوي</h4>
+
+                                    <ul>
+                                        <li>Computer Basics</li>
+                                        <li>Scratch</li>
+                                        <li>code.org (express course) with Minecraft</li>
+                                    </ul>
+                                    <h4> الاهداف</h4>
+                                    <ul>
+                                        <li>ﺗﻌﻠﻢ أﺳﺎﺳﻴﺎت اﺳﺘﺨﺪام اﻟﻜﻤﺒﻴﻮﺗﺮ</li>
+                                        <li>اﻛﺘﺴﺎب ﻣﻔﺎﻫﻴﻢ اﻟﺒﺮﻣﺠﺔ ﺑﻄﺮﻳﻘﺔ ﻣﻤﺘﻌﺔ.</li>
+                                        <li>ﺗﺼﻤﻴﻢ أﻟﻌﺎب إﺑﺪاﻋﻴﺔ.</li>
+                                        <li>ﺗﻨﻤﻴﺔ ﻣﻬﺎرات ﺣﻞ اﻟﻤﺸﻜﻼت.</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="meta-date">
+                                <span class="date">1</span>
+                                <span class="month">Level</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-article">
+                        
+                            <div class="content-right-container">
+                                <div class="content-right">
+                                    <div class="ArtHeader">
+                                        <h3>المستوي الثاني</h3>
+                                        <span class="arabicText">6 شهور </span>
+
+                                    </div>
+                                    <h4> المحتوي</h4>
+
+                                    <ul>
+                                        <li>PictoBlox</li>
+                                        <li>Introduction to Web Development</li>
+                                        <li>Introduction to AI</li>
+                                    </ul>
+                                    <h4> الاهداف</h4>
+                                    <ul>
+                                        <li> ﺗﻌﻠﻢ أﺳﺎﺳﻴﺎت اﻟﺒﺮﻣﺠﺔ ﺑﺸﻜﻞ ﻣﺘﻘﺪم و ﺑﻤﻔﺎﻫﻴﻢ ﺑﺮﻣﺠﻴﺔ أﺷﻤﻞ</li>
+                                        <li> اﻟﺘﻌﺮف ﻋﻠﻲ أﺳﺎﺳﻴﺎت ﺗﻄﻮﻳﺮ اﻟﻤﻮاﻗﻊ وﻛﻴﻔﻴﺔ ﺑﻨﺎء ﻣﻮاﻗﻊ ﺑﺴﻴﻄﺔ</li>
+                                        <li> اﻟﺘﻌﺮف ﻋﻠﻲ اﻟﻤﻔﺎﻫﻴﻢ اﻷﺳﺎﺳﻴﺔ ﻓﻲ اﻟﺬﻛﺎء اﻻﺻﻄﻨﺎﻋﻲ و اﻟﺘﻌﻠﻢ اﻻﻟﻲ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="meta-date">
+                                <span class="date">2</span>
+                                <span class="month">Level</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-article">
+                            <div class="content-left-container">
+                                <div class="content-left">
+                                    <div class="ArtHeader">
+                                        <h3>المستوي الثالث</h3>
+                                        <span class="arabicText">12 شهر </span>
+
+                                    </div>
+                                    <h4> المحتوي</h4>
+
+                                    <ul>
+                                        <li>Track Development Web</li>
+                                        <li>Track AI</li>
+                                    </ul>
+                                    <h4> الاهداف</h4>
+                                    <ul>
+                                        <li> اﻟﺘﺨﺼﺺ ﻓﻲ ﻣﺠﺎﻻت اﻟﺒﺮﻣﺠﺔ اﻷﻛﺜﺮ ﻃﻠﺒﺎ.</li>
+                                        <li> اﻟﻮﺻﻮل ﻟﻤﺴﺘﻮى ﻣﺘﻘﺪم ﻓﻲ اﻟﺘﺨﺼﺺ اﻟﻤﺨﺘﺎر.</li>
+                                        <li> ﺗﻨﻔﻴﺬ ﻣﺸﺎرﻳﻊ ﻋﻤﻠﻴﺔ ﺗﺆﻫﻞ اﻟﻄﺎﻟﺐ ﻟﺪﺧﻮل ﺳﻮق اﻟﻌﻤﻞ.</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="meta-date">
+                                <span class="date">3</span>
+                                <span class="month">Level</span>
+                            </div>
+                        </div>
+                        <!-- Additional events can go here -->
+                    </div>
+                    <div class="timeline-end">End</div>
+                </div>
+            </section>
+
+            <section id="timeline2" class="timeline-section">
+                <div id="conference-timeline">
+                    <div class="timeline-start">Start</div>
+                    <div class="conference-center-line"></div>
+                    <div class="conference-timeline-content">
+                        <!-- Timeline 2 Content -->
+                        <div class="timeline-article">
+                            <div class="content-left-container">
+                                <div class="content-left">
+                                    <div class="ArtHeader">
+                                        <h3>المستوي الأول</h3>
+                                        <span class="arabicText">3 شهور </span>
+
+                                    </div>
+                                    <h4> المحتوي</h4>
+
+                                    <ul>
+                                        <li>Photoshop</li>
+                                    </ul>
+                                    <h4> الاهداف</h4>
+                                    <ul>
+                                        <li>ﺗﻨﻤﻴﺔ اﻹﺑﺪاع واﻟﺘﻔﻜﻴﺮ اﻟﺒﺼﺮي: ﺗﻄﻮﻳﺮﻗﺪرات اﻷﻃﻔﺎل ﻓﻲ ﻓﻬﻢ اﻷﻟﻮان واﻷﺷﻜﺎل واﻟﺘﻜﻮﻳﻨﺎت</li>
+                                        <li> ﺗﺤﺴﻴﻦ ﻣﻬﺎرات اﻟﺘﻮاﺻﻞ: ﺗﺤﻮﻳﻞ اﻷﻓﻜﺎر اﻟﻤﺠﺮدة إﻟﻰ ﺗﺼﻮرات ﻣﺮﺋﻴﺔ ﻟﺘﻌﺰﻳﺰ اﻟﺘﻌﺒﻴﺮ</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="meta-date">
+                                <span class="date">1</span>
+                                <span class="month">Level</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-article">
+                        
+                            <div class="content-right-container">
+                                <div class="content-right">
+                                    <div class="ArtHeader">
+                                        <h3>المستوي الثاني</h3>
+                                        <span class="arabicText">3 شهور </span>
+
+                                    </div>
+                                    <h4> المحتوي</h4>
+
+                                    <ul>
+                                        <li>Illustrator</li>
+                                    </ul>
+                                    <h4> الاهداف</h4>
+                                    <ul>
+                                        <li>ﺗﻨﻤﻴﺔ اﻹﺑﺪاع واﻟﺘﻔﻜﻴﺮ اﻟﺒﺼﺮي: ﺗﻄﻮﻳﺮﻗﺪرات اﻷﻃﻔﺎل ﻓﻲ ﻓﻬﻢ اﻷﻟﻮان واﻷﺷﻜﺎل واﻟﺘﻜﻮﻳﻨﺎت</li>
+                                        <li> ﺗﺤﺴﻴﻦ ﻣﻬﺎرات اﻟﺘﻮاﺻﻞ: ﺗﺤﻮﻳﻞ اﻷﻓﻜﺎر اﻟﻤﺠﺮدة إﻟﻰ ﺗﺼﻮرات ﻣﺮﺋﻴﺔ ﻟﺘﻌﺰﻳﺰ اﻟﺘﻌﺒﻴﺮ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="meta-date">
+                                <span class="date">2</span>
+                                <span class="month">Level</span>
+                            </div>
+                        </div>
+                        <!-- Additional events can go here -->
+                    </div>
+                    <div class="timeline-end">End</div>
+                </div>
+            </section>
+
+            <section id="timeline3" class="timeline-section">
+                <div id="conference-timeline">
+                    <div class="timeline-start">Start</div>
+                    <div class="conference-center-line"></div>
+                    <div class="conference-timeline-content">
+                        <!-- Timeline 3 Content -->
+                        <div class="timeline-article">
+                            <div class="content-left-container">
+                                <div class="content-left">
+                                    <div class="ArtHeader">
+                                        <h3>المستوي الأول</h3>
+                                        <span class="arabicText">3 شهور </span>
+
+                                    </div>
+                                    <h4> المحتوي</h4>
+
+                                    <ul>
+                                        <li>Adope Premiere</li>
+                                    </ul>
+                                    <h4> الاهداف</h4>
+                                    <ul>
+                                        <li>ﺗﻨﻤﻴﺔ اﻹﺑﺪاع : ﻳﺴﺎﻋﺪ ﺗﻌﻠﻢ اﻟﻤﻮﻧﺘﺎج اﻷﻃﻔﺎل ﻋﻠﻰ اﻟﺘﻌﺒﻴﺮ ﻋﻦ أﻓﻜﺎرﻫﻢ ﺑﺸﻜﻞ ﻣﺮﺋﻲ وإﺑﺪاﻋﻲ</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="meta-date">
+                                <span class="date">1</span>
+                                <span class="month">Level</span>
+                            </div>
+                        </div>
+                        <!-- Additional events can go here -->
+                    </div>
+                    <div class="timeline-end">End</div>
+                </div>
+            </section>
+
+            <section id="timeline4" class="timeline-section text-center">
+                <div class="conference-timeline-content">
+                <span>No Plan Yet</span>
+
+                </div>
+            </section>
+        </div>
+        <!-- Timeline End -->
 
         <!-- Footer Start -->
-        <div class="bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="bg-dark text-white-50 footer pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
@@ -225,7 +555,7 @@
                     </div>
                     <!-- <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Newsletter</h3>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                             <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
@@ -255,6 +585,7 @@
         <!-- Footer End -->
 
 
+
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
@@ -269,6 +600,7 @@
 
     <!-- Template Javascript -->
     <script src="../../js/main.js"></script>
+    <script src="./timeline.js"></script>
 </body>
 
 </html>

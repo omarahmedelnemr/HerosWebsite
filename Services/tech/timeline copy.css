@@ -1,0 +1,159 @@
+#timeline-container{
+    /* height: 50vh; */
+    position: relative;
+    padding: 50px 0px;
+}
+#timeline * {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+  }
+
+  #timeline h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+  /* Timeline Container */
+  .timeline-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  /* Timeline Line */
+  .timeline-line {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #0074d9;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 99;
+  }
+  .timeDot{
+      width: 20px;
+      height: 20px;
+      background-color: #0074d9;
+      border-radius: 100%;
+      margin-top: -8px;
+      position: absolute;
+  }
+  /* Timeline Event Boxes */
+  .timeline-event {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  .timeline-event:hover {
+    transform: scale(1.05);
+  }
+  .timeline-event.top {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+  .timeline-event.bottom {
+    align-self: flex-end;
+    margin-top: 240px;
+  }
+  .timeline-event h3 {
+    font-size: 1.2rem;
+    color: #0074d9;
+    margin-bottom: 5px;
+  }
+  .timeline-event p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  .timeline-event ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .timeline-event ul li {
+    font-size: 0.8rem;
+    color: #333;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  /* Event Description */
+  .event-description {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #e0f7fa;
+    border-left: 3px solid #0074d9;
+    border-radius: 5px;
+    display: none;
+    max-width: 600px;
+    margin: 20px auto 0;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .timeline-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .timeline-line {
+      display: none;
+    }
+    .timeline-event {
+      width: 80%;
+      margin-top: 20px;
+    }
+    .timeline-event.bottom {
+        margin-top: 0px;
+    }
+  }
+
+
+
+
+
+
+  /* Tab navigation styling */
+.timeline-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline-tabs button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0074d9;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-tabs button.active,
+.timeline-tabs button:hover {
+    background-color: #005bb5;
+}
+
+.timeline-section {
+    display: none; /* Hide all sections by default */
+}
+
+.timeline-section.active {
+    display: block; /* Show active timeline section */
+}

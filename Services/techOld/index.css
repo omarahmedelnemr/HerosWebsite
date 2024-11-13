@@ -1,0 +1,10 @@
+#ServicePage  .page-header{
+    /* direction: rtl; */
+    text-align: right;
+}
+#aboutSection  {
+    direction: rtl;
+}
+.breadcrumb{
+    direction: rtl;
+}
