@@ -174,7 +174,7 @@ h6,
 
 
 /*** Header ***/
-.header-carousel::before,
+/* .header-carousel::before,
 .header-carousel::after,
 .page-header::before,
 .page-header::after {
@@ -194,7 +194,7 @@ h6,
     top: auto;
     bottom: 0;
     background: url(../img/bg-header-bottom.png) center center repeat-x;
-}
+} */
 .owl-carousel-item{
     direction: rtl;
 }

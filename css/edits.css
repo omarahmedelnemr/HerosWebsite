@@ -102,7 +102,7 @@ body{
 .wave_bottom{
     position: relative;
 }
-.wave_top::before{
+/* .wave_top::before{
     position: absolute;
     content: "";
     width: 100%;
@@ -147,7 +147,7 @@ body{
     z-index: 1;
 
     background: url(../img/bg-header-bottom.svg) center center repeat-x;
-}
+} */
 
 
 .courseContentOpened{
