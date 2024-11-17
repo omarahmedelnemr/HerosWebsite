@@ -87,7 +87,7 @@ body{
 }
 
 .bg-ment{
-    background-color: #27beb633;
+    background-color: #27beb61f;
 }
 #about{
     width: 100%;
@@ -103,6 +103,19 @@ body{
 .wave_bottom{
     position: relative;
 }
+.underline{
+    position: relative;
+    display: inline-block; /* Ensures the border width matches the text */
+}
+.underline::before {
+    content: "";
+    position: absolute;
+    bottom: -15px; /* Position it at the bottom of the text */
+    left: 35%;
+    width: 30%; /* Match the width of the text */
+    height: 0.3rem; /* Adjust the border height */
+    background-color: currentColor; /* Matches the text color */
+  }
 /* .wave_top::before{
     position: absolute;
     content: "";
