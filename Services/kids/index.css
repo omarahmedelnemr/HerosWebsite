@@ -32,3 +32,16 @@ body{
     margin-right: 5px;
     transition: .5s;
 }
+
+.container{
+    position: relative;
+    z-index: 2;
+}
+
+.deco-white-circle-1,
+.deco-white-circle-2,
+.deco-blue-circle,
+.deco-yellow-circle,
+.deco-green-diamond {
+    z-index: 1;
+}

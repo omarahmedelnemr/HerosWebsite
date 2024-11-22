@@ -5,3 +5,16 @@
 #aboutSection  {
     direction: rtl;
 }
+#aboutSection .container{
+    position: relative;
+    z-index: 2;
+}
+
+
+.deco-white-circle-1,
+.deco-white-circle-2,
+.deco-blue-circle,
+.deco-yellow-circle,
+.deco-green-diamond {
+    z-index: 1;
+}
