@@ -156,8 +156,6 @@
 
 
 
-
-
 /* End Colors */
 .service-section .icon-box .service-title {
 	margin-right: 90px;
@@ -187,4 +185,76 @@
 	line-height: 1;
 	font-size: 3rem;
 	font-weight: 600;
+}
+
+
+
+#TimeLineSectionContainer{
+    
+}
+#TimeLineSectionContainer .timeline-nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+#TimeLineSectionContainer .timeline-nav button{
+    margin: 0px 10px;
+    border: none;
+    border-radius: 100px;
+    padding: 20px;
+    background-color: #5ad2d2;
+    color: white;
+}
+
+
+
+.CourseSection{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.CourseSection.active{
+    display: flex;
+}
+
+.CourseSection .levelBox{
+    display: none;
+}
+.CourseSection .levelBox.activeBox{
+    display: block;
+}
+
+.CourseSection .timelineSmall{
+    display: none;
+}
+.CourseSection .timelineXSmall{
+    display: none;
+}
+@media (max-width:1000px) {
+    .CourseSection .timelineSmall{
+        display: block;
+    }
+    
+    .CourseSection .timelineBig{
+        display: none;
+    }
+    .CourseSection .timelineXSmall{
+        display: none;
+    }
+}
+
+@media (max-width:790px) {
+    .CourseSection .timelineXSmall{
+        display: block;
+    }
+    .CourseSection .timelineSmall{
+        display: none;
+    }
+    
+    .CourseSection .timelineBig{
+        display: none;
+    }
 }
