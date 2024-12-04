@@ -91,7 +91,7 @@ body{
 }
 #about{
     width: 100%;
-    background-color: #27beb633;
+    /* background-color: #27beb633; */
 }
 .large_font{
     font-size: 20px;
