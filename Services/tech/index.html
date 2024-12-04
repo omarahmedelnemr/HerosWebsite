@@ -342,12 +342,29 @@
         <!-- Timeline Start -->
         <div id="TimeLineSectionContainer" >
             <!-- Navigation Bar -->
-            <div class="timeline-nav">
+            <div class="timeline-track-nav">
+                <button onclick="ShowSection('Coding')" class="active">البرمجة</button>
+                <button onclick="ShowSection('Graphic')"> الجرافيك ديزاين</button>
+                <button onclick="ShowSection('Editing')">المونتاج</button>
+                <button onclick="ShowSection('Motion')">موشن جرافيك</button>
+            </div>
+            <div class="timeline-nav ForCoding active">
                 <button onclick="ShowLevel('Level1')" class="active">المستوي الاول</button>
                 <button onclick="ShowLevel('Level2')">المستوي الثاني</button>
                 <button onclick="ShowLevel('Level3')">المستوي الثالث</button>
             </div>
+            <div class="timeline-nav ForGraphic">
+                <button onclick="ShowLevel('Level1')" class="active">المستوي الاول</button>
+                <button onclick="ShowLevel('Level2')">المستوي الثاني</button>
+            </div>
+            <div class="timeline-nav ForEditing">
+                <button onclick="ShowLevel('Level1')" class="active">المستوي الاول</button>
+            </div>
+            <div class="timeline-nav ForMotion">
+            </div>
 
+
+            <!-- Timelines -->
             <div class="Coding CourseSection active">
                 <div class="levelBox Level1 activeBox">
                     <img src="../../img/Timelines/CodeL1.png" class="timelineBig" alt="">
@@ -365,7 +382,30 @@
                     <img src="../../img/Timelines/CodeL3v.png" class="timelineXSmall" alt="">
                 </div>
             </div>
-            
+            <div class="Graphic CourseSection">
+                <div class="levelBox Level1 activeBox">
+                    <img src="../../img/Timelines/Graphic1.png" class="timelineBig" alt="">
+                    <img src="../../img/Timelines/Graphic1V.png" class="timelineSmall" alt="">
+                    <img src="../../img/Timelines/Graphic1V.png" class="timelineXSmall" alt="">
+                </div>
+                <div class="levelBox Level2">
+                    <img src="../../img/Timelines/Graphic2.png" class="timelineBig" alt="">
+                    <img src="../../img/Timelines/Graphic2V.png" class="timelineSmall" alt="">
+                    <img src="../../img/Timelines/Graphic2V.png" class="timelineXSmall" alt="">
+                </div>
+            </div>
+            <div class="Editing CourseSection">
+                <div class="levelBox Level1 activeBox">
+                    <img src="../../img/Timelines/Edit1.png" class="timelineBig" alt="">
+                    <img src="../../img/Timelines/Edit1V.png" class="timelineSmall" alt="">
+                    <img src="../../img/Timelines/Edit1V.png" class="timelineXSmall" alt="">
+                </div>
+                
+            </div>
+            <div class="Motion CourseSection">
+                <span>No Plan Yet</span>
+                
+            </div>
         </div>
         <!-- Timeline End -->
 

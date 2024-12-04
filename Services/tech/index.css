@@ -189,15 +189,40 @@
 
 
 
-/* #TimeLineSectionContainer{
-    
-} */
-#TimeLineSectionContainer .timeline-nav{
+#TimeLineSectionContainer .timeline-track-nav{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+}
+#TimeLineSectionContainer .timeline-track-nav button:first-child{
+    border-radius: 0px 10px 10px 0px;
+}
+#TimeLineSectionContainer .timeline-track-nav button:last-child{
+    border-radius: 10px 0px 0px 10px;
+}
+#TimeLineSectionContainer .timeline-track-nav button{
+    /* margin: 0px 10px; */
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(81, 188, 188);
+    color: white;
+}
+#TimeLineSectionContainer .timeline-nav button.active{
+    background-color: #4ab0b0;
+}
+
+
+#TimeLineSectionContainer .timeline-nav{
+    display: none;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
     /* margin-bottom: 20px; */
+}
+#TimeLineSectionContainer .timeline-nav.active{
+    display: flex;
 }
 #TimeLineSectionContainer .timeline-nav button{
     margin: 0px 10px;
@@ -206,6 +231,9 @@
     padding: 10px 20px;
     background-color: #5ad2d2;
     color: white;
+}
+#TimeLineSectionContainer .timeline-nav button.active{
+    background-color: #4ab0b0;
 }
 
 
