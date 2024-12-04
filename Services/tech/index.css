@@ -189,9 +189,9 @@
 
 
 
-#TimeLineSectionContainer{
+/* #TimeLineSectionContainer{
     
-}
+} */
 #TimeLineSectionContainer .timeline-nav{
     display: flex;
     flex-direction: row-reverse;
@@ -203,13 +203,16 @@
     margin: 0px 10px;
     border: none;
     border-radius: 100px;
-    padding: 20px;
+    padding: 10px 20px;
     background-color: #5ad2d2;
     color: white;
 }
 
 
-
+.CourseSection img{
+    width: 90%;
+    margin: auto;
+}
 .CourseSection{
     display: none;
     flex-direction: row;
@@ -222,6 +225,7 @@
 
 .CourseSection .levelBox{
     display: none;
+    justify-content: center;
 }
 .CourseSection .levelBox.activeBox{
     display: block;
@@ -229,6 +233,7 @@
 
 .CourseSection .timelineSmall{
     display: none;
+    width: 60%;
 }
 .CourseSection .timelineXSmall{
     display: none;
