@@ -1,7 +1,22 @@
 body{
     background-color: white;
     font-weight: bold;
+    display: none;
 }
+.langButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.AR{
+    /* font-family: "El Messiri", sans-serif; */
+
+}
+.EN{
+    /* font-family: "Montserrat", sans-serif; */
+}
+
 .breadcrumb{
     background-color: transparent;
 }
@@ -78,11 +93,12 @@ body{
 }
 
 .contactParagraph{
-    direction: ltr;
-    text-align: right;
+    direction: inherit;
+    text-align: end;
+	text-wrap: nowrap;
 }
 .footer{
-    text-align: right;
+    text-align: end;
     direction: rtl;
 }
 

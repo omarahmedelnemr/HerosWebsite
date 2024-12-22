@@ -46,9 +46,8 @@
 
 
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 language_directed_section">
             <a href="/" class="navbar-brand">
-                <!-- <h1 class="m-0 text-primary"><i class="fa fa-book-reader me-3"></i>Kider</h1> -->
                 <img class="Logo me-3 text-primary" src="../img/Logo.png"/>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -56,20 +55,45 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav"> <!--  mx-auto -->
-                    <a href="/" class="nav-item nav-link ">الرئيسية</a>
-                    <a href="/about" class="nav-item nav-link">من نحن؟</a>
+                    <a href="/" class="nav-item nav-link AR">الرئيسية</a>
+                    <a href="/" class="nav-item nav-link EN">Home</a>
+
+                    <a href="/about" class="nav-item nav-link AR">من نحن؟</a>
+                    <a href="/about" class="nav-item nav-link EN">About us</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">خدماتنا</a>
+
+                        <a class="nav-link dropdown-toggle active AR" data-bs-toggle="dropdown">خدماتنا</a>
+                        <a class="nav-link dropdown-toggle active EN" data-bs-toggle="dropdown">Services</a>
+
                         <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="/Services/parents/" class="dropdown-item">أولياء الأمور</a>
-                            <a href="/Services/teachers/" class="dropdown-item">المعلمين</a>
-                            <a href="/Services/kids/" class="dropdown-item">الأبطال</a>
-                            <a href="/Services/consult/" class="dropdown-item">جلسات و إستشارات</a>
+                            <a href="/Services/parents/" class="dropdown-item AR">أولياء الأمور</a>
+                            <a href="/Services/parents/" class="dropdown-item EN">Parents</a>
+
+                            <a href="/Services/teachers/" class="dropdown-item AR">المعلمين</a>
+                            <a href="/Services/teachers/" class="dropdown-item EN">Teachers</a>
+
+                            <a href="/Services/kids/" class="dropdown-item AR">الأبطال</a>
+                            <a href="/Services/kids/" class="dropdown-item EN">Heroes</a>
+
+                            <a href="/Services/consult/" class="dropdown-item AR">جلسات و إستشارات</a>
+                            <a href="/Services/consult/" class="dropdown-item EN">Sessions and consultations</a>
+
                             <a href="/Services/tech/" class="dropdown-item">HeroesTech</a>
                         </div>
                     </div>
-                    <a href="/Gallery" class="nav-item nav-link">المعرض </a>
+                    <a href="/Gallery" class="nav-item nav-link AR">المعرض </a>
+                    <a href="/Gallery" class="nav-item nav-link EN">Gallery</a>
+                    <div class="langButton" onclick="changeLange()">
+                        <a href="#" class="EN">
+                            <i class="fas fa-globe"></i>
+                            عربي
+                        </a>
+                        <a href="#" class="AR">
 
+                            EN
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
                 </div>
                 <!-- <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a> -->
             </div>
@@ -244,62 +268,86 @@
         <!-- Classes End -->
 
         <!-- Footer Start -->
-        <div class="bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn reverse_language_directed_section" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">فروعنا</h3>
-                        <p class="mb-2 contactParagraph">الاسكندرية ,مصر<i class="fa fa-map-marker-alt me-3"></i></p>
-                        <p class="mb-2 contactParagraph">الشيخ زايد ,مصر<i class="fa fa-map-marker-alt me-3"></i></p>
-                        <p class="mb-2 contactParagraph">مدينة نصر ,مصر<i class="fa fa-map-marker-alt me-3"></i></p>
-                        <p class="mb-2 contactParagraph">حلوان ,مصر<i class="fa fa-map-marker-alt me-3"></i></p>
-                        <p class="mb-2 contactParagraph">الهرم ,مصر<i class="fa fa-map-marker-alt me-3"></i></p>
-                        <p class="mb-2 contactParagraph">شمال الرياض ,السعودية<i class="fa fa-map-marker-alt me-3"></i></p>
-                        <p class="mb-2 contactParagraph">شرق الرياض ,السعودية<i class="fa fa-map-marker-alt me-3"></i></p>
-                        <p class="mb-2 contactParagraph">أونلاين<i class="fa fa-map-marker-alt me-3"></i></p>
+                        <h3 class="text-white mb-4 AR">فروعنا</h3>
+                        <h3 class="text-white mb-4 EN">our Branches</h3>
+
+                        <p class="mb-2 contactParagraph AR">الاسكندرية ,مصر<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        <p class="mb-2 contactParagraph EN">Alexandria, Egypt<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        
+                        <p class="mb-2 contactParagraph AR">الشيخ زايد ,مصر<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        <p class="mb-2 contactParagraph EN">Sheikh Zayed, Egypt<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        
+                        <p class="mb-2 contactParagraph AR">مدينة نصر ,مصر<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        <p class="mb-2 contactParagraph EN">Nasr City, Egypt<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        
+                        <p class="mb-2 contactParagraph AR">حلوان ,مصر<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        <p class="mb-2 contactParagraph EN">Helwan, Egypt<i class="fa fa-map-marker-alt mx-3"></i></p>
                         
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">تواصل معنا</h3>
-                        <p class="mb-2 contactParagraph">+012 345 67890<i class="fa fa-phone-alt me-3"></i></p>
-                        <p class="mb-2 contactParagraph">heroesacademy849@gmail.com<i class="fa fa-envelope me-3"></i></p>
-                        <div class="d-flex pt-2">
+                        <h3 class="text-white mb-4 AR">فروعنا</h3>
+                        <h3 class="text-white mb-4 EN">our Branches</h3>
+                        
+                        <p class="mb-2 contactParagraph AR">الهرم ,مصر<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        <p class="mb-2 contactParagraph EN">Alharam, Egypt<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        
+                        <p class="mb-2 contactParagraph AR">شمال الرياض ,السعودية<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        <p class="mb-2 contactParagraph EN">North of Riyadh, Saudi Arabia<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        
+                        <p class="mb-2 contactParagraph AR">شرق الرياض ,السعودية<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        <p class="mb-2 contactParagraph EN">East of Riyadh, Saudi Arabia<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        
+                        <p class="mb-2 contactParagraph AR">أونلاين<i class="fa fa-map-marker-alt mx-3"></i></p>
+                        <p class="mb-2 contactParagraph EN">online<i class="fa fa-map-marker-alt ms-3 mx-3"></i></p>
+                        
+                    </div>
+                    <!-- <div class="col-lg-3 col-md-6"> -->
+                        <!-- <h3 class="text-white mb-4">تصفح أيضا</h3> -->
+                        <!-- <a class="btn btn-link text-white-50" href="/Services/">خدماتنا</a> -->
+                        <!-- <a class="btn btn-link text-white-50" href="">Privacy Policy</a> -->
+                        <!-- <a class="btn btn-link text-white-50" href="">Terms & Condition</a> -->
+                    <!-- </div> -->
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4 AR">تواصل معنا</h3>
+                        <h3 class="text-white mb-4 EN">Contact Us</h3>
+
+                        <p class="mb-2 contactParagraph">+012 345 67890<i class="fa fa-phone-alt mx-3"></i></p>
+                        <p class="mb-2 contactParagraph">heroesacademy849@gmail.com<i class="fa fa-envelope mx-3"></i></p>
+                        <div class="d-flex pt-2 justify-content-end">
                             <!-- <a class="btn btn-outline-light btn-social" target="_blank" href=""><i class="fab fa-twitter"></i></a> -->
                             <a title="Facebook Page" class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/Keyanegypt"><i class="fab fa-facebook-f"></i></a>
                             <!-- <a title="HeroesTech Facebook" class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/profile.php?id=61564202242954"><i class="fas fa-code"></i></a> -->
-                            <a title="HeroesTech Facebook" class="btn btn-outline-light btn-social" target="_blank" href="https://www.facebook.com/profile.php?id=61564202242954"><i class="fab fa-facebook-f"></i></a>
                             <a title="Instagram Page" class="btn btn-outline-light btn-social" target="_blank" href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">تصفح أيضا</h3>
-                        <a class="btn btn-link text-white-50" href="../">الرئيسية</a>
-                        <!-- <a class="btn btn-link text-white-50" href="">Contact Us</a> -->
-                        <a class="btn btn-link text-white-50" href="/Services/">خدماتنا</a>
-                        <!-- <a class="btn btn-link text-white-50" href="">Privacy Policy</a> -->
-                        <!-- <a class="btn btn-link text-white-50" href="">Terms & Condition</a> -->
-                    </div>
+                    
+                    
                     <div class="col-lg-3 col-md-6">
                         <a href="/Gallery/">
-                            <h3 class="text-white mb-4">المعرض</h3>
+                            <h3 class="text-white mb-4 AR">المعرض</h3>
+                            <h3 class="text-white mb-4 EN">Gallery</h3>
                             <div class="row g-2 pt-2">
                                 <div class="col-4">
-                                    <img class="img-fluid rounded bg-light p-1" src="../img/Trip 10.png" alt="">
+                                    <img class="img-fluid rounded bg-light p-1" src="img/Trip 10.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img class="img-fluid rounded bg-light p-1" src="../img/Trip 11.png" alt="">
+                                    <img class="img-fluid rounded bg-light p-1" src="img/Trip 11.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img class="img-fluid rounded bg-light p-1" src="../img/Trip 13.png" alt="">
+                                    <img class="img-fluid rounded bg-light p-1" src="img/Trip 13.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img class="img-fluid rounded bg-light p-1" src="../img/Trip 16.png" alt="">
+                                    <img class="img-fluid rounded bg-light p-1" src="img/Trip 16.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img class="img-fluid rounded bg-light p-1" src="../img/Trip 4.png" alt="">
+                                    <img class="img-fluid rounded bg-light p-1" src="img/Trip 4.png" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img class="img-fluid rounded bg-light p-1" src="../img/Trip 8.png" alt="">
+                                    <img class="img-fluid rounded bg-light p-1" src="img/Trip 8.png" alt="">
                                 </div>
                             </div>
                         </a>
@@ -315,24 +363,29 @@
                     </div> -->
                 </div>
             </div>
-            <div class="container">
+            <div class="container" style="direction: rtl;">
                 <div class="copyright">
                     <div class="row">
                         
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="/">الرئيسية</a>
+                                <a href="/" class="AR">الرئيسية</a>
+                                <a href="/" class="EN">Home</a>
                                 <!-- <a href="">Cookies</a> -->
                                 <!-- <a href="">Help</a> -->
                                 <!-- <a href="">FQAs</a> -->
                             </div>
                         </div>
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 EN">
                             &copy; <a class="border-bottom" href="#">Heroes</a>, All Right Reserved. 
+                        </div>
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 AR">
+                            <a class="border-bottom" href="#">Heroes</a>, كل الحقوق محفوظة.  &copy; 
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
         <!-- Footer End -->
 
@@ -351,6 +404,7 @@
 
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
+    <script src="../../js/lang.js"></script>
 </body>
 
 </html>
