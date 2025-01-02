@@ -62,7 +62,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav"> <!--  mx-auto -->
+                <div class="navbar-nav align-items-center"> <!--  mx-auto -->
                     <a href="." class="nav-item nav-link active AR">الرئيسية</a>
                     <a href="." class="nav-item nav-link active EN">Home</a>
 
@@ -74,31 +74,30 @@
                         <a class="nav-link dropdown-toggle EN" data-bs-toggle="dropdown">Services</a>
 
                         <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="/Services/parents/" class="dropdown-item AR">أولياء الأمور</a>
+                            <a href="/Services/kids/" class="dropdown-item AR">برامج تربية الأبطال</a>
+                            <a href="/Services/kids/" class="dropdown-item EN">Heroes Programs</a>
+
+                            <a href="/Services/parents/" class="dropdown-item AR">دبلومات أولياء الأمور</a>
                             <a href="/Services/parents/" class="dropdown-item EN">Parents</a>
 
-                            <a href="/Services/teachers/" class="dropdown-item AR">المعلمين</a>
-                            <a href="/Services/teachers/" class="dropdown-item EN">Teachers</a>
-
-                            <a href="/Services/kids/" class="dropdown-item AR">الأبطال</a>
-                            <a href="/Services/kids/" class="dropdown-item EN">Heroes</a>
-
-                            <a href="#classess" class="dropdown-item AR">جلسات و إستشارات</a>
-                            <a href="#classess" class="dropdown-item EN">Sessions and consultations</a>
+                            <a href="/Services/teachers/" class="dropdown-item AR active">برامج تطوير المنظومة التعليمية </a>
+                            <a href="/Services/teachers/" class="dropdown-item EN active">Teachers</a>
+                            
+                            <a href="/#classess" class="dropdown-item AR">جلسات و إستشارات</a>
+                            <a href="/#classess" class="dropdown-item EN">Sessions and consultations</a>
 
                             <a href="/Services/tech/" class="dropdown-item">HeroesTech</a>
                         </div>
                     </div>
                     <a href="/Gallery" class="nav-item nav-link AR">المعرض </a>
                     <a href="/Gallery" class="nav-item nav-link EN">Gallery</a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-primary  mx-3  slideInLeft AR">تواصل معنا</a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-primary  mx-3  slideInLeft EN">Contact us </a>
                     <div class="langButton" onclick="changeLange()">
-                        <a href="#" class="EN">
+                        <a href="#" class="EN" title="عربي">
                             <i class="fas fa-globe"></i>
-                            عربي
                         </a>
-                        <a href="#" class="AR">
-
-                            EN
+                        <a href="#" class="AR" title="English">
                             <i class="fas fa-globe"></i>
                         </a>
                     </div>
@@ -108,56 +107,45 @@
         </nav>
         <!-- Navbar End -->
 
-
-        <!-- Header Slider Start -->
-        <div class="CarouselSection container-fluid p-0">
-            <div class="owl-carousel header-carousel position-relative">
-                <div class="owl-carousel-item position-relative language_directed_section">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-2 text-white animated slideInDown mb-4 AR">مشروع بطل</h1>
-                                    <h1 class="display-2 text-white animated slideInDown mb-4 EN">Hero Project</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2 AR"> معاً نحو مستقبل مشرق للأبطال الصغار: نزرع القيم، ونبني قادة الغد</p>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2 EN">Together towards a bright future for young heroes: We instill values, and build tomorrow’s leaders</p>
-
-                                    
-
-                                    <a href="/about/" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft AR">رؤيتنا</a>
-                                    <a href="/about/" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft EN">About us</a>
-                                    <a href="#services" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight AR">خدماتنا</a>
-                                    <a href="#services" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight EN">Services</a>
-                                </div>
-                            </div>
+        <!-- Header Section -->
+        <header class=" d-flex decor-2 language_directed_section">
+            <!-- Background Decoration -->
+            <div class="deco-white-circle-1"></div> <!-- end of deco-white-circle-1 -->
+            <div class="deco-white-circle-2"></div> <!-- end of deco-white-circle-2 -->
+            <div class="deco-blue-circle"></div> <!-- end of deco-blue-circle -->
+            <div class="deco-yellow-circle"></div> <!-- end of deco-yellow-circle -->
+            <div class="deco-green-diamond"></div> <!-- end of deco-yellow-circle -->
+            <div class="content row w-100 align-items-center">
+                
+                <!-- Right Section -->
+                <div class="col-md-6 rightSection  d-flex justify-content-center align-items-center flex-column">
+                    <div class="w-70">
+                        <h1 class="display-5 fw-bold AR">هيروز مشروع بطل</h1>
+                        <h1 class="display-5 fw-bold EN">Heroes Academy</h1>
+                        <!-- <p class="lead">معاً نحو مستقبل مشرق للأبطال الصغار: نزرع القيم، ونبني قادة الغد</p> -->
+                        <p class="lead AR"> أكاديمية مختصة في اكتشاف المواهب و تطوير و تنمية مهارات الأطفال و الأبطال من خلال ما تقدمه من حلول مبتكرة في بناء الشخصية و التأهيل الأخلاقي و المهاري و النفسي و التقني للفئات العمريه من 8:17 عاما</p>
+                        <p class="lead EN">An academy specialized in discovering talents and developing and enhancing the skills of children and champions through the innovative solutions it provides in building character and moral, skill, psychological and technical rehabilitation for age groups from 8 to 17 years.</p>
+                        <div>
+                            <a href="https://wa.me/1234567890" target="_blank" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft AR">تواصل معنا</a>
+                            <a href="https://wa.me/1234567890" target="_blank" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft EN">Contact us</a>
+                            <a href="#services" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight AR">خدماتنا</a>
+                            <a href="#services" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight EN">Services</a>
+                            
                         </div>
                     </div>
+                    
                 </div>
-                <div class="owl-carousel-item position-relative language_directed_section">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-10 col-lg-8">
-                                    <h1 class="display-2 text-white animated slideInDown mb-4 AR">مشروع بطل</h1>
-                                    <h1 class="display-2 text-white animated slideInDown mb-4 EN">Hero Project</h1>
 
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2 AR">رحلة اكتشاف الذات والنجاح تبدأ هنا: إعداد أجيال متميزة علمياً وأخلاقياً</p>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2 EN"> The journey of self-discovery and success begins here: Preparing generations that are distinguished scientifically and morally.</p>
-
-                                    <a href="/about/" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft AR">رؤيتنا</a>
-                                    <a href="/about/" class="btn btn-primary rounded-pill py-sm-3 px-sm-5 me-3 animated slideInLeft EN">About us</a>
-                                    <a href="#services" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight AR">خدماتنا</a>
-                                    <a href="#services" class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight EN">Services</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Left Section -->
+                <div class="left-video col-md-6 text-start leftSection d-flex justify-content-center">
+                    <!-- <img src="img/about-1.jpg" alt="About Image" class="img-fluid rounded shadow"> -->
+                   <video class="img-fluid rounded shadow" autoplay loop controls muted disablePictureInPicture controlsList="nofullscreen noplaybackrate nodownload">
+                        <source src="img/hero.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-        </div>
-        <!-- Header Slider End -->
+        </header>
+        <!-- Header Section End -->
 
         <!-- Why HeroesTech Start -->
         <section  id="success" class="language_directed_section p-5  wow fadeInUp decor-1 ">
@@ -571,6 +559,7 @@
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <a href="https://wa.me/1234567890" target="_blank" class="btn btn-lg btn-primary btn-lg-square whatsappDownButton" title="contact us"><i class="fab fa-whatsapp"></i></a>
     <!-- </div> -->
 
     <!-- JavaScript Libraries -->
