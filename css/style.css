@@ -12,7 +12,13 @@
     bottom: 45px;
     z-index: 99;
 }
-
+.whatsappDownButton{
+    position: fixed;
+    display: none;
+    left: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
