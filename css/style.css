@@ -146,7 +146,9 @@ h6,
 /* .navbar .dropdown-toggle[aria-expanded=true]::after {
     transform: rotate(-180deg);
 } */
-
+.navbar .nav-item .dropdown-menu{
+    text-align: start;
+}
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
