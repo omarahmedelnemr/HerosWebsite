@@ -208,7 +208,12 @@ header .left-video{
     background: url(../img/bg-header-bottom.svg) center center repeat-x;
 } */
 
-
+.title{
+	border-bottom: 4px;
+    width: max-content;
+    margin: auto;
+    border-bottom-style: solid;
+}
 .courseContentOpened{
     direction: rtl;
     overflow: hidden;
