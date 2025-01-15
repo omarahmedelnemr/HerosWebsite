@@ -222,7 +222,7 @@ header .left-video{
 
 }
 .classes-item:hover .courseContentExtraMini{
-    height:50px;
+    height:100px;
 }
 .classes-item:hover .courseContentMini{
     height:150px;

@@ -27,7 +27,7 @@ function loadContent() {
         direction = 'ltr'
     }
     for (var element of elements){
-        element.style.display = "none"
+        element.style.setProperty("display", "none", "important");
     }
     for (var section of sectionsDirection){
         section.style.direction = direction
