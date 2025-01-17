@@ -8,7 +8,13 @@
 .breadcrumb{
     direction: rtl;
 }
+#header{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 
 
 .container{
@@ -22,4 +28,35 @@
 .deco-yellow-circle,
 .deco-green-diamond {
     z-index: 1;
+}
+
+
+.course_section{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.min-text{
+    font-size: 15px;
+}
+.mediaSide{
+    text-align: center;
+}
+.ml-2{
+    margin-left: 10px;
+}
+.mr-2{
+    margin-right: 10px;
+}
+.course-links a{
+    font-size: 1.5rem;
+
+}
+.course-points{
+    font-size: 1.5rem;
+}
+
+#mini-camps{
+    padding-bottom: 10rem;
 }

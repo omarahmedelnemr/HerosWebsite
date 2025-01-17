@@ -1,0 +1,195 @@
+.sideSlider{
+    position: relative;
+    /* width:50%; */
+    direction: ltr;
+    margin: auto;
+    text-align: center;
+}
+.sideSlider .container {
+    max-width: 100%; /* Use a percentage for width */
+    margin: 0px auto;
+    position: relative;
+    margin-top: 5rem; /* Use relative units for spacing */
+    /* max-height: 50vh; */
+}
+
+.sideSlider .slider img {
+    border-radius: 2rem; /* Scaled border radius */
+
+}
+
+.sideSlider .slider {
+    height: 70%; /* Use viewport height for slider height */
+    width: 100%; /* Take full container width */
+    max-width: 90%; /* Ensure it doesn't exceed container width */
+    margin: 0 auto;
+}
+
+.sideSlider .next:hover,
+.sideSlider .prev:hover {
+    border-radius: 0.625rem; /* Adjusted for scaling */
+    /* background-color: #7d7676; */
+}
+
+.sideSlider .next:focus,
+.sideSlider .prev:focus {
+    color: greenyellow;
+    border-radius: 0.625rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sideSlider .pic:hover {
+    border: 0.0625rem solid currentColor;
+    border-color: #504e4e;
+}
+
+.sideSlider .next,
+.sideSlider .prev {
+    font-size: 2rem; /* Scaled font size */
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 40%; /* Stay proportional to slider height */
+    width: 2rem;
+    padding: 0.5rem;
+}
+
+.sideSlider .next {
+    right: 0;
+}
+
+.sideSlider .prev {
+    left: 0;
+}
+
+.sideSlider .slider {
+    position: relative;
+    text-align: center;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    /* height: 100%; */
+    height: max-content;
+}
+
+.sideSlider .slider img{
+    border-radius: 1rem;
+    max-height: 100%;
+    width: 100%;
+}
+
+.sideSlider .active {
+    opacity: 1; /* Corrected value */
+}
+
+.sideSlider .Deactivating {
+    opacity: 0.3;
+}
+
+.sideSlider .cont {
+    text-align: center;
+    position: absolute; /* Better positioning control */
+    right: -15%;
+    bottom: -10%;
+    z-index: 99;
+    transform: translateX(-50%);
+}
+/* Exceptions */
+#camps .sideSlider .cont,
+#mini-camps .sideSlider .cont {
+    right: 3%;
+    bottom: -10%;
+    transform: translateX(0%);
+}
+.title-cont{
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+#camps .sideSlider h2,
+#mini-camps .sideSlider h2  {
+    /* bottom: 1%; */
+    top: -10%;
+    /* left: 30%; */
+    color: #504e4e;
+    /* color: white; */
+    font-size: 2rem;
+    position: absolute;
+    margin: auto;
+    /* text-align: center; */
+    background-color: #e5f7f6c7;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* End Exceptions */
+.sideSlider .pic {
+    cursor: pointer;
+    border-radius: 0.625rem;
+}
+
+.sideSlider span {
+    background-color: aqua;
+}
+
+.sideSlider .cont img {
+    border: 0.03125rem solid black; /* Scaled border width */
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+}
+
+
+/* Add media queries for further responsiveness */
+@media (max-width: 990px) {
+    /* .sideSlider{
+        width: 100%; 
+    } */
+    .sideSlider h2 {
+        font-size: 1.5rem; /* Smaller font for smaller screens */
+    }
+    .sideSlider .slider {
+        /*height: 50vh; /* Adjusted for smaller screens */
+    }
+    .sideSlider .next,
+    .sideSlider .prev {
+        font-size: 1.5rem; /* Smaller controls */
+    }
+    .sideSlider .cont {
+        text-align: center;
+        position: absolute; /* Better positioning control */
+        right: 27%;
+        bottom: -10%;
+        z-index: 99;
+        transform: translateX(-50%);
+    }
+    .sideSlider .cont img {
+        max-width: 60px;
+    }
+    #camps .sideSlider,
+    #mini-camps .sideSlider{
+        margin-bottom: 5rem;
+    }
+    #camps .sideSlider .cont,
+    #mini-camps .sideSlider .cont {
+        width: 80%;
+        margin: auto;
+
+        right: 10%;
+        bottom: -40%;
+        transform: translateX(0%);
+    }
+    #camps .sideSlider h2,
+    #mini-camps .sideSlider h2 {
+        font-size: 1rem;
+        top: -15%;
+    }
+}
