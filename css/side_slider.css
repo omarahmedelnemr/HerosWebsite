@@ -91,21 +91,21 @@
     text-align: center;
     position: absolute; /* Better positioning control */
     right: 0%;
-    bottom: -10%;
+    top: 101%;
     z-index: 99;
     transform: translateX(-50%);
 }
 /* Exceptions */
 #mini-camps .sideSlider .cont{
     right: 3%;
-    top: 95%;
+    top: 101%;
     height: max-content;
     transform: translateX(0%);
 }
 #camps .sideSlider .cont {
     right: 15%;
     transform: translateX(0%);
-    top: 95%;
+    top: 101%;
     height: max-content;
 }
 .title-cont{

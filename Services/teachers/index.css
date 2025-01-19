@@ -9,7 +9,7 @@
     direction: rtl;
 }
 #header{
-    height: 90vh;
+    /* height: 90vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,14 +49,79 @@
 .mr-2{
     margin-right: 10px;
 }
-.course-links a{
-    font-size: 1.5rem;
+.divHeader h1{
+    text-wrap: nowrap;
+    background-color: #e6007d;
+    width: max-content;
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+    
+}
+.course-links p{
+    font-size: 2rem;
+    background-color: #24bebe;
+    padding: 10px;
+    border-radius: 10px;
+}
+.course-links p a{
+    font-size: 2rem;
+    color: white;
+    /* color: #24bebe;; */
 
 }
 .course-points{
     font-size: 1.5rem;
 }
-
+.course-points h3{
+    font-size: 2rem;
+}
 #mini-camps{
     padding-bottom: 10rem;
+}
+
+
+.row-slider{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin: auto;
+    height: 30vh;
+    overflow: scroll;
+    right: 0px;
+    margin-right: -320px;
+}
+.row-slider img{
+    margin: 10px;
+}
+@media (max-width:1000px) {
+    #teachers .content{
+        flex-direction: column-reverse;
+    }
+    .divHeader h1{
+        text-wrap: wrap;
+    }
+    .course-links p{
+        font-size: 10px;
+    }
+    .course-links p a{
+        /* font-size: 1rem; */
+    
+    }
+    /* .course-points{
+        font-size: 0.5rem;
+    } */
+    .course-points h3{
+        /* font-size: 1rem; */
+    }
+}
+.language_directed_section h1{
+    /* color:yellow; */
+    text-wrap: nowrap;
+    background-color: #e6007d;
+    width: max-content;
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+
 }
