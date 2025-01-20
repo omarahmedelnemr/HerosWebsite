@@ -69,14 +69,14 @@
                 <a href="/Gallery/" class="nav-item nav-link EN active"> Gallery</a>
                 <a href="https://wa.me/+966534703325" target="_blank" class="btn btn-primary  mx-3  slideInLeft AR">تواصل معنا</a>
                 <a href="https://wa.me/+966534703325" target="_blank" class="btn btn-primary  mx-3  slideInLeft EN">Contact us </a>
-                <div class="langButton" onclick="changeLange()">
+                <!-- <div class="langButton" onclick="changeLange()">
                     <a href="#" class="EN" title="عربي">
                         <i class="fas fa-globe"></i>
                     </a>
                     <a href="#" class="AR" title="English">
                         <i class="fas fa-globe"></i>
                     </a>
-                </div>
+                </div> -->
             </div>
             <!-- <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a> -->
         </div>
@@ -84,121 +84,28 @@
     <!-- Navbar End -->
     <!-- Trips Start -->
     <div class="tripsContainer decor-2">
-        <div class="row">
+        <div class="column">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;" id="services">
                 <h1 class="mb-3 arabicText AR">المعرض</h1>
                 <h1 class="mb-3 EN">Gallery</h1>
             </div>
             <!-- Top Navigation for categories For Small Screens-->
-            <div class="col-md-3 gallery-nav wow fadeInLeft TopNavSmall">
+            <div class="col-12 my-4 gallery-nav wow fadeInLeft TopNavSmall">
                 <ul class="list-group">
                     <li class="list-group-item active smallActive" data-filter="all">الكل</li>
-                    <li class="list-group-item" data-filter="trip1">مخيم تركيا</li>
-                    <li class="list-group-item" data-filter="trip2">مخيم مكة و المدينة</li>
-                    <li class="list-group-item" data-filter="trip3">فرع الرياض</li>
-                    <li class="list-group-item" data-filter="trip4">فروع مصر</li>
+                    <li class="list-group-item" data-filter="Turkey">مخيم تركيا</li>
+                    <li class="list-group-item" data-filter="Mekkah">مخيم مكة و المدينة</li>
+                    <li class="list-group-item" data-filter="Riyadh">فرع الرياض</li>
+                    <li class="list-group-item" data-filter="Egypt">فروع مصر</li>
+                    <!-- <li class="list-group-item" data-filter="Videos"> فيديوهات </li> -->
                 </ul>
             </div>
-            <div class="row">
-                <!-- Left Navigation for categories -->
-                <div class="col-md-3 gallery-nav wow fadeInRight EN">
-                    <ul class="list-group text-left">
-                        <li class="list-group-item active" data-filter="all">All</li>
-                        <li class="list-group-item" data-filter="trip1">Turkey Camp</li>
-                        <li class="list-group-item" data-filter="trip2">Mekkah and Madina Camp</li>
-                        <li class="list-group-item" data-filter="trip3">Riyadh Branch</li>
-                        <li class="list-group-item" data-filter="trip4">Egypt Branches</li>
-                    </ul>
-                </div> 
-
+            <div class="row col-12">
                 <!-- Right side Image Gallery -->
-                <div class="col-md-9 gallery-images wow fadeInLeft">
-
-                    <!-- "مخيم تركيا" -->
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم تركيا</span>
-                        <img src="../img/Gallery/Trip 1.png" alt="مخيم تركيا" data-category="trip1">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم تركيا</span>
-                        <img src="../img/Gallery/Trip 2.png" alt="مخيم تركيا" data-category="trip1">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم تركيا</span>
-                        <img src="../img/Gallery/Trip 3.png" alt="مخيم تركيا" data-category="trip1">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم تركيا</span>
-                        <img src="../img/Gallery/Trip 4.png" alt="مخيم تركيا" data-category="trip1">
-                    </div>
-
-                    <!-- مخيم مكة و المدينة -->
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم مكة و المدينة</span>
-                        <img src="../img/Gallery/Trip 5.png" alt="مخيم مكة و المدينة" data-category="trip2">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم مكة و المدينة</span>
-                        <img src="../img/Gallery/Trip 6.png" alt="مخيم مكة و المدينة" data-category="trip2">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم مكة و المدينة</span>
-                        <img src="../img/Gallery/Trip 7.png" alt="مخيم مكة و المدينة" data-category="trip2">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم مكة و المدينة</span>
-                        <img src="../img/Gallery/Trip 8.png" alt="مخيم مكة و المدينة" data-category="trip2">
-                    </div>
-
-                    <!-- مخيم الرياض -->
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم الرياض</span>
-                        <img src="../img/Gallery/Trip 9.png" alt="مخيم الرياض" data-category="trip3">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم الرياض</span>
-                        <img src="../img/Gallery/Trip 10.png" alt="مخيم الرياض" data-category="trip3">
-                    </div>
-
-                    <!-- مخيم وادي الريان -->
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم وادي الريان</span>
-                        <img src="../img/Gallery/Trip 11.png" alt="مخيم وادي الريان" data-category="trip4">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم وادي الريان</span>
-                        <img src="../img/Gallery/Trip 12.png" alt="مخيم وادي الريان" data-category="trip4">
-                    </div>
-
-                    <!-- مخيم جنوب سيناء -->
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم جنوب سيناء</span>
-                        <img src="../img/Gallery/Trip 13.png" alt="مخيم جنوب سيناء" data-category="trip4">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم جنوب سيناء</span>
-                        <img src="../img/Gallery/Trip 14.png" alt="مخيم جنوب سيناء" data-category="trip4">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم جنوب سيناء</span>
-                        <img src="../img/Gallery/Trip 15.png" alt="مخيم جنوب سيناء" data-category="trip4">
-                    </div>
-                    <div class="imageContainer">
-                        <span class="imagePlaceholder">مخيم جنوب سيناء</span>
-                        <img src="../img/Gallery/Trip 16.png" alt="مخيم جنوب سيناء" data-category="trip4">
-                    </div>
+                <div class="col-12 gallery-images wow fadeInLeft" id="gallery">
+                    
+                    <div class="loader" id="loader">Loading more images...</div>
                 </div>
-
-                <div class="col-md-3 gallery-nav wow fadeInRight AR">
-                    <ul class="list-group">
-                        <li class="list-group-item active smallActive" data-filter="all">الكل</li>
-                        <li class="list-group-item" data-filter="trip1">مخيم تركيا</li>
-                        <li class="list-group-item" data-filter="trip2">مخيم مكة و المدينة</li>
-                        <li class="list-group-item" data-filter="trip3">فرع الرياض</li>
-                        <li class="list-group-item" data-filter="trip4">فروع مصر</li>
-                    </ul>
-                </div> 
-                
             </div>
             
         </div>
@@ -341,6 +248,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./index.js"></script>
     <script>
         // Initialize WOW.js
         new WOW().init();
@@ -381,7 +289,7 @@
             }
         });
     </script>
-    <script src="../js/lang.js"></script>
+    <script src="/js/lang.js"></script>
 
 </body>
 </html>
