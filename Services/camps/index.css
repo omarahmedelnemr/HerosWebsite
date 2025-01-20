@@ -4,6 +4,9 @@
 #header .text{
     text-align: start;
 }
+h3{
+    text-align: start;
+}
 #PhotoGallry{
     background-color:#f8ffff;
 
@@ -13,7 +16,7 @@
     overflow: auto;
 }
 #PhotoGallry img{
-    background-color:#f8ffff;
+    /* background-color:#f8ffff; */
 }
 #PhotoGallry .page-header{
     /* direction: rtl; */
@@ -120,4 +123,8 @@
         flex-basis: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.Contact_Button{
+    text-align: center;
 }
