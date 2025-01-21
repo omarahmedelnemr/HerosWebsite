@@ -16,16 +16,16 @@ const folders = {
         title: 'فرع مصر',
         images: Array.from({ length: 17 }, (_, i) => `/img/Gallery/Egypt/Egypt ${i + 1}.jpg`),
     },
-    // Videos: {
-    //     "title": "فيديوهات",
-    //     "images": [
-    //         "/img/Gallery/Videos/videoplayback.mp4",
-    //         "/img/Gallery/Videos/إفطار هيروز الأسكندرية_1.mp4",
-    //         "/img/Gallery/Videos/الإستراحة 1.mp4",
-    //         "/img/Gallery/Videos/غار حراء 3.mp4",
-    //         "/img/Gallery/Videos/كامب هيروز  33.avi.mp4",
-    //     ]
-    // },
+    Videos: {
+        "title": "فيديوهات",
+        "images": [
+            "/img/Gallery/Videos/videoplayback.mp4",
+            "/img/Gallery/Videos/إفطار هيروز الأسكندرية_1.mp4",
+            "/img/Gallery/Videos/الإستراحة 1.mp4",
+            "/img/Gallery/Videos/غار حراء 3.mp4",
+            "/img/Gallery/Videos/كامب هيروز  33.avi.mp4",
+        ]
+    },
 };
 
 // Convert folder data into an array of folder objects
