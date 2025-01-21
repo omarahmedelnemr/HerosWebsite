@@ -23,7 +23,7 @@ const folders = {
             "/img/Gallery/Videos/إفطار هيروز الأسكندرية_1.mp4",
             "/img/Gallery/Videos/الإستراحة 1.mp4",
             "/img/Gallery/Videos/غار حراء 3.mp4",
-            "/img/Gallery/Videos/كامب هيروز  33.avi.mp4",
+            "/img/Gallery/Videos/كامب هيروز 33.avi.mp4",
         ]
     },
 };
