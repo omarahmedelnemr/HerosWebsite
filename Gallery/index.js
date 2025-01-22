@@ -19,11 +19,26 @@ const folders = {
     Videos: {
         "title": "فيديوهات",
         "images": [
-            "/img/Gallery/Videos/videoplayback.mp4",
-            "/img/Gallery/Videos/إفطار هيروز الأسكندرية_1.mp4",
-            "/img/Gallery/Videos/الإستراحة 1.mp4",
-            "/img/Gallery/Videos/غار حراء 3.mp4",
-            "/img/Gallery/Videos/كامب هيروز 33.avi.mp4",
+            {
+                src:"/img/Gallery/Videos/videoplayback.mp4",
+                name:"كامب هيروز 41"
+            },
+            {
+                src:"/img/Gallery/Videos/إفطار هيروز الأسكندرية_1.mp4",
+                name:"فطار هيروز الأسكندرية"
+            },
+            {
+                src:"/img/Gallery/Videos/الإستراحة 1.mp4",
+                name:"الإستراحة 1"
+            },
+            {
+                src:"/img/Gallery/Videos/غار حراء 3.mp4",
+                name:"غار حراء"
+            },
+            {
+                src:"/img/Gallery/Videos/كامب هيروز 33.avi.mp4",
+                name:"كامب هيروز 33"
+            },
         ]
     },
 };
@@ -83,13 +98,13 @@ function loadImages(filterCategory = 'all') {
                     if (folder.category === 'Videos') {
                         const placeholder = document.createElement('span');
                         placeholder.classList.add('videoPlaceholder');
-                        placeholder.textContent = '';//folder.title;
+                        placeholder.textContent = src.name;//folder.title;
 
                         // Create the video element
                         const video = document.createElement('video');
                         video.controls = true;  // Add controls to the video player
                         const source = document.createElement('source');
-                        source.src = src; // Set the video source
+                        source.src = src.src; // Set the video source
                         source.type = 'video/mp4'; // Set the video type
 
                         // Set the video's alt text and category as data attributes
