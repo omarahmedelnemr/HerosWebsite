@@ -103,6 +103,11 @@
     border-radius: 10px;
 
 }
+.divHeader{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
 @media (max-width:1000px) {
     #teachers .content{
         flex-direction: column-reverse;
