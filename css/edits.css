@@ -173,7 +173,7 @@ header .left-video{
     height: 10px;
     top: 0;
     left: 0;
-    background: url(../img/bg-header-top.png) center center repeat-x;
+    background: url(/img/bg-header-top.png) center center repeat-x;
     z-index: 1;
 
 }
@@ -188,7 +188,7 @@ header .left-video{
     bottom: 0;
     z-index: 1;
 
-    background: url(../img/bg-header-bottom.png) center center repeat-x;
+    background: url(/img/bg-header-bottom.png) center center repeat-x;
 }
 
 .wave_top_svg::before{
@@ -198,7 +198,7 @@ header .left-video{
     height: 10px;
     top: 0;
     left: 0;
-    background: url(../img/bg-header-top.svg) center center repeat-x;
+    background: url(/img/bg-header-top.svg) center center repeat-x;
     z-index: 1;
 
 }
@@ -210,7 +210,7 @@ header .left-video{
     bottom: 0;
     z-index: 1;
 
-    background: url(../img/bg-header-bottom.svg) center center repeat-x;
+    background: url(/img/bg-header-bottom.svg) center center repeat-x;
 } */
 
 .title{
