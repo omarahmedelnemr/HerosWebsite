@@ -239,7 +239,7 @@ header .left-video{
 }
 
 .classes-item:hover .courseContentMedium{
-    height:200px;
+    height:250px;
 }
 
 .classes-item:hover .courseContentLarge{
@@ -495,7 +495,7 @@ header .left-video{
 
 	.decor-2 .deco-blue-circle {
 		top: 17rem;
-		right: 7rem;
+		right: 5rem;
 		width: 6rem;
 		height: 6rem;
 	}
