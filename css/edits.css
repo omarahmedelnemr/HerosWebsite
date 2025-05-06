@@ -330,8 +330,23 @@ header .left-video{
 .deco-green-diamond {
 	display: none;
     z-index: -1;
+} 
+.divHeader{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
+.PageHeaderTitle{
+    text-wrap: nowrap;
+    background-color: #e6007d;
+    width: max-content;
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+    
+}
 /* Min-width 992px */
 @media (min-width: 992px) {
     .decor-1 .deco-white-circle-1 {
@@ -431,8 +446,14 @@ header .left-video{
 		height: 1rem;
 	}
 }
+@media (max-width:1000px) {
 
-
+    .PageHeaderTitle{
+        font-size: 1.5rem;
+        width: 100%;
+        text-wrap: wrap;
+    }
+}
 /* Min-width 1200px */
 @media (min-width: 1200px) {
 	
